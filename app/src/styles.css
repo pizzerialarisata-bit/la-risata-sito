@@ -370,3 +370,49 @@ h1, h2, h3, h4, .eyebrow, .menu-row-title h3, .beer-card h4, .footer-brand, .but
   .brand-film-heading .eyebrow { justify-content: center; }
   .brand-film-video { width: min(100%, 1120px); max-height: 630px; margin: 0 auto; }
 }
+
+/* Desktop typography: lighten the heavy display type without touching mobile. */
+@media (min-width: 851px) {
+  .hero h1,
+  .section-heading h2,
+  .manifesto h2,
+  .dine-copy h2,
+  .contact-section h2,
+  .menu-row h3,
+  .craft-heading h2,
+  .pizza-gallery-heading h3,
+  .burger-gallery-heading h3,
+  .dessert-gallery-heading h3,
+  .brand-film-heading h2,
+  .full-menu-cta h3,
+  .footer-brand,
+  .beer-heading h3 {
+    font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+  }
+  .hero h1 em,
+  .section-heading h2 em,
+  .manifesto h2 em,
+  .dine-copy h2 em,
+  .contact-section h2 em,
+  .brand-film-heading h2 em {
+    font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .eyebrow, .menu-row small, .nav-cta, .text-link, .button, .contact-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: .08em;
+  }
+}
+
+/* Desktop: make the central La Risata logo at least three times larger. */
+@media (min-width: 851px) {
+  .hero-inline-logo {
+    width: clamp(630px, 72vw, 990px);
+    max-height: none;
+    margin: 30px auto 22px;
+  }
+}
