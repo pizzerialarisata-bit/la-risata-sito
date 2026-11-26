@@ -27,7 +27,7 @@ const friedImages = [
 ];
 
 const categories = [
-  { n: "01", title: "Pizza", desc: "Impasti curati, ingredienti scelti e abbinamenti che lasciano il segno. La nostra pizza è fatta per essere gustata fino all'ultimo morso.", tag: "PIZZA", image: "/assets/pizzas/pizza-01.png" },
+  { n: "01", title: "Pizza", desc: "Impasti curati, ingredienti scelti e abbinamenti che lasciano il segno. La nostra pizza è fatta per essere gustata fino all'ultimo morso.", tag: "PIZZA", image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3L1VPC1OfuQ0Br7fzp3PiVmmGmM/1fba98fd-e5f1-49bc-85f6-4cf887a1be3a.png" },
   { n: "02", title: "Burger", desc: "200 grammi di carattere, smash croccanti e chicken irresistibile. Qui il morso si fa serio. Il gusto, ancora di più.", tag: "BURGER", image: "/assets/burgers/burger-01.png" },
   { n: "03", title: "Fries", desc: "Dorati, croccanti e pieni di gusto. I nostri fritti sono la tentazione perfetta da condividere, da affiancare a una pizza o da abbinare al tuo burger preferito. Perché ogni sfizio merita il suo spazio.", tag: "FRIES", image: friedImages[0] },
   { n: "04", title: "Dolci", desc: "Dessert al bicchiere, una nota golosa per chiudere in bellezza.", tag: "DESSERT", image: "/assets/desserts/tiramisu.png" },
@@ -52,16 +52,11 @@ function Index() {
           <p className="eyebrow"><span className="eyebrow-line"/> STREET FOOD, FATTO CON CARATTERE</p>
           <h1>IL GUSTO<br/>NON FA<br/><em>SCENA.</em></h1>
           <img className="hero-inline-logo" src="/assets/la-risata-logo-cream.png" alt="Logo La Risata"/>
-          <div className="hero-actions"><a className="text-link" href="#menu">Guarda cosa bolle <span>↓</span></a></div>
+          <video className="hero-film-video" autoPlay muted loop playsInline preload="auto" aria-label="Video di presentazione de La Risata">
+            <source src="https://d2ol7oe51mr4n9.cloudfront.net/user_3L1VPC1OfuQ0Br7fzp3PiVmmGmM/66923420-6aa8-4a7a-9d19-e1dccc6489b3.mp4" type="video/mp4" />
+            Il tuo browser non supporta la riproduzione video.
+          </video>
         </div>
-      </section>
-
-      <section className="brand-film section-pad" aria-label="La Risata in video">
-        <div className="brand-film-heading"><p className="eyebrow">DENTRO LA RISATA</p></div>
-        <video className="brand-film-video" autoPlay muted loop playsInline preload="auto" aria-label="Video di presentazione de La Risata">
-          <source src="https://d2ol7oe51mr4n9.cloudfront.net/user_3L1VPC1OfuQ0Br7fzp3PiVmmGmM/66923420-6aa8-4a7a-9d19-e1dccc6489b3.mp4" type="video/mp4" />
-          Il tuo browser non supporta la riproduzione video.
-        </video>
       </section>
 
       <section className="menu-section section-pad" id="menu">
