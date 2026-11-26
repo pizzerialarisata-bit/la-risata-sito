@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900" fill="none">
+ <defs>
+  <linearGradient id="bg" x1="90" y1="70" x2="930" y2="830" gradientUnits="userSpaceOnUse"><stop stop-color="#B34B2E"/><stop offset="1" stop-color="#64291F"/></linearGradient>
+  <linearGradient id="bun" x1="250" y1="240" x2="750" y2="580" gradientUnits="userSpaceOnUse"><stop stop-color="#F6C879"/><stop offset="1" stop-color="#C87935"/></linearGradient>
+  <linearGradient id="patty" x1="310" y1="430" x2="760" y2="550" gradientUnits="userSpaceOnUse"><stop stop-color="#59301F"/><stop offset="1" stop-color="#291B17"/></linearGradient>
+  <filter id="shadow" x="120" y="120" width="900" height="720" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="24"/></filter>
+ </defs>
+ <rect width="1100" height="900" rx="26" fill="url(#bg)"/>
+ <circle cx="890" cy="145" r="250" fill="#E78A50" fill-opacity=".18"/>
+ <circle cx="170" cy="760" r="260" fill="#F3C982" fill-opacity=".10"/>
+ <path d="M90 680 1010 680" stroke="#F8E8CE" stroke-opacity=".2" stroke-width="2" stroke-dasharray="7 14"/>
+ <ellipse cx="555" cy="682" rx="365" ry="62" fill="#1E1411" fill-opacity=".55" filter="url(#shadow)"/>
+ <!-- burger -->
+ <path d="M250 430c0-148 128-254 305-254s305 106 305 254H250Z" fill="url(#bun)" stroke="#6B351F" stroke-width="15"/>
+ <path d="M320 315c68-83 147-116 238-116 86 0 161 33 221 101" stroke="#FFE3A5" stroke-width="13" stroke-linecap="round" opacity=".72"/>
+ <g fill="#FFF0C5"><ellipse cx="410" cy="280" rx="7" ry="15" transform="rotate(-34 410 280)"/><ellipse cx="495" cy="235" rx="7" ry="15" transform="rotate(18 495 235)"/><ellipse cx="590" cy="250" rx="7" ry="15" transform="rotate(-22 590 250)"/><ellipse cx="680" cy="302" rx="7" ry="15" transform="rotate(35 680 302)"/></g>
+ <path d="M240 430c70-27 121 25 179 0 65-28 110 30 176 0 61-27 117 28 170 0 44-22 78-9 116 0l-24 48H264l-24-48Z" fill="#6B9B42" stroke="#294A29" stroke-width="9"/>
+ <path d="m265 468 612 0-41 69H300l-35-69Z" fill="#F0C84E" stroke="#9D5B24" stroke-width="10"/>
+ <path d="M280 525c82-24 130 27 209 0 80-27 130 28 214 0 71-24 115 21 170 0l-20 60H300l-20-60Z" fill="url(#patty)" stroke="#1F1714" stroke-width="14"/>
+ <path d="M300 585h560c-20 62-99 94-280 94s-260-32-280-94Z" fill="url(#bun)" stroke="#6B351F" stroke-width="15"/>
+ <path d="M360 619c90 38 288 42 440 0" stroke="#FFE0A1" stroke-width="11" stroke-linecap="round" opacity=".55"/>
+ <!-- pizza slice -->
+ <path d="M125 135 345 180 222 365 125 135Z" fill="#E8B45F" stroke="#5A2D1F" stroke-width="13"/>
+ <path d="m145 164 174 34-102 146-72-180Z" fill="#F5D28D"/>
+ <path d="m155 160 151 33-22 26-114-24-15-35Z" fill="#C95D36"/>
+ <g fill="#A93F2D"><circle cx="213" cy="228" r="13"/><circle cx="271" cy="247" r="11"/><circle cx="228" cy="293" r="12"/></g>
+ <path d="M145 135c42-16 93-7 133 9" stroke="#FFF0C8" stroke-width="9" stroke-linecap="round"/>
+ <!-- fries -->
+ <g transform="translate(820 520) rotate(12)"><path d="M-12 30 8-115l35 5-18 146M35 30 54-145l34 5-17 170M79 30 97-100l34 5-15 125M-52 30l-7-132 34-2 7 134" fill="#F5C45E" stroke="#8E4B25" stroke-width="9"/><path d="M-70 10h230l-25 152H-45L-70 10Z" fill="#C44F31" stroke="#6B2D20" stroke-width="12"/><path d="M-45 45h178" stroke="#F2A16A" stroke-width="8"/></g>
+ <g fill="#F7E6CB" font-family="Arial,sans-serif" font-weight="900"><text x="82" y="820" font-size="28" letter-spacing="8">PIZZA · BURGER · FRIES</text><text x="820" y="95" font-size="22" letter-spacing="5">FATTO BENE</text></g>
+ <path d="M72 95h170M72 95v70M1028 805H858m170 0v-70" stroke="#F6E7CE" stroke-width="3" stroke-opacity=".6"/>
+</svg>
