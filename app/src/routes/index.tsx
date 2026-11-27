@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
@@ -34,6 +35,18 @@ const categories = [
 ];
 
 function Index() {
+  const spotAudio = useRef<HTMLAudioElement>(null);
+  const [spotPlaying, setSpotPlaying] = useState(false);
+
+  const toggleSpot = async () => {
+    const audio = spotAudio.current;
+    if (!audio) return;
+    if (audio.paused) {
+      try { await audio.play(); setSpotPlaying(true); }
+      catch { setSpotPlaying(false); }
+    } else { audio.pause(); setSpotPlaying(false); }
+  };
+
   return (
     <main className="site-shell">
       <header className="topbar">
@@ -56,6 +69,15 @@ function Index() {
             <source src="https://d2ol7oe51mr4n9.cloudfront.net/user_3L1VPC1OfuQ0Br7fzp3PiVmmGmM/66923420-6aa8-4a7a-9d19-e1dccc6489b3.mp4" type="video/mp4" />
             Il tuo browser non supporta la riproduzione video.
           </video>
+          <div className="risata-audio-player">
+            <div className="risata-audio-copy"><span className="risata-audio-kicker">LA RISATA SOUND</span><strong>IL NOSTRO SPOT.</strong><small>Ascolta l’energia de La Risata.</small></div>
+            <button className="risata-audio-toggle" type="button" onClick={toggleSpot} aria-label={spotPlaying ? "Metti in pausa lo spot" : "Ascolta lo spot de La Risata"}>
+              <span aria-hidden="true">{spotPlaying ? "Ⅱ" : "▶"}</span>{spotPlaying ? "PAUSA" : "ASCOLTA LO SPOT"}
+            </button>
+            <audio ref={spotAudio} preload="none" onEnded={() => setSpotPlaying(false)} onPause={() => setSpotPlaying(false)} onPlay={() => setSpotPlaying(true)}>
+              <source src="https://d2ol7oe51mr4n9.cloudfront.net/user_3L1VPC1OfuQ0Br7fzp3PiVmmGmM/42aa2e2f-4992-4e04-a627-64401b97b0c0.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
         </div>
       </section>
 

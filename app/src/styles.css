@@ -494,3 +494,15 @@ h1, h2, h3, h4, .eyebrow, .menu-row-title h3, .beer-card h4, .footer-brand, .but
 .manifesto-mark { display:flex; align-items:center; justify-content:center; opacity:1; }
 .manifesto-mark img { display:block; width:100%; max-width:260px; max-height:360px; height:auto; object-fit:contain; }
 @media (max-width:850px) { .manifesto-mark { display:none; } }
+
+
+/* La Risata audio spot player */
+.risata-audio-player { width:min(100%,1280px); margin:18px auto 0; padding:18px 22px; display:flex; align-items:center; justify-content:space-between; gap:20px; border:1px solid rgba(255,189,27,.48); background:linear-gradient(110deg,#191919,#0b0b0b); box-shadow:0 12px 34px rgba(0,0,0,.22); }
+.risata-audio-copy { display:flex; flex-direction:column; gap:4px; }
+.risata-audio-kicker { color:#ff8a00; font-family:var(--street-font); font-size:9px; letter-spacing:2px; }
+.risata-audio-copy strong { color:#fff4e8; font-family:var(--street-font); font-size:clamp(18px,2.4vw,27px); letter-spacing:-.03em; }
+.risata-audio-copy small { color:#c7c1ba; font-size:12px; }
+.risata-audio-toggle { flex-shrink:0; display:inline-flex; align-items:center; gap:11px; padding:14px 18px; border:0; background:#ffbd1b; color:#080808; font-family:var(--street-font); font-size:11px; letter-spacing:1px; cursor:pointer; transition:background .2s,transform .2s; }
+.risata-audio-toggle:hover { background:#ff8a00; transform:translateY(-2px); }
+.risata-audio-toggle span { font-size:15px; }
+@media(max-width:520px) { .risata-audio-player { align-items:flex-start; flex-direction:column; padding:17px; gap:14px; }.risata-audio-toggle { width:100%; justify-content:center; } }
