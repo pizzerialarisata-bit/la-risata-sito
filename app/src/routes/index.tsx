@@ -91,7 +91,7 @@ function Index() {
       </section>
 
       <section className="manifesto" id="storia">
-        <div className="manifesto-mark">LR<span>®</span></div><div className="manifesto-copy"><p className="eyebrow">CHI SIAMO · DAL 2011</p><h2>LA RISATA.<br/><em>UNA STORIA DI GUSTO.</em></h2><p>La Risata nasce a Pescara nel 2011 e cresce con una passione semplice: portare in tavola cose buone, preparate con cura. Siamo una realtà indipendente che unisce pizza, burger e fries in un’unica idea di street food artigianale. Ogni giorno lavoriamo tra impasti, ingredienti scelti e preparazioni espresse, con il desiderio di far sentire tutti a casa. Niente formalità: solo carattere, qualità e voglia di condividere.</p></div>
+        <div className="manifesto-mark"><img src="/la-risata-logo-cream-new.png" alt="Logo La Risata — Since 2011, Slice Pizza Burger Fries" /></div><div className="manifesto-copy"><p className="eyebrow">CHI SIAMO · DAL 2011</p><h2>LA RISATA.<br/><em>UNA STORIA DI GUSTO.</em></h2><p>La Risata nasce a Pescara nel 2011 e cresce con una passione semplice: portare in tavola cose buone, preparate con cura. Siamo una realtà indipendente che unisce pizza, burger e fries in un’unica idea di street food artigianale. Ogni giorno lavoriamo tra impasti, ingredienti scelti e preparazioni espresse, con il desiderio di far sentire tutti a casa. Niente formalità: solo carattere, qualità e voglia di condividere.</p></div>
         <div className="manifesto-side">UNA COSA SEMPLICE:<br/><strong>MANGIARE BENE.</strong></div>
       </section>
 

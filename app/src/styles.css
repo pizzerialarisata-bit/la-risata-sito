@@ -435,3 +435,62 @@ h1, h2, h3, h4, .eyebrow, .menu-row-title h3, .beer-card h4, .footer-brand, .but
   .hero-inline-logo { margin-top:20px; margin-bottom:5px; }
   .hero-film-video { width:100%; margin-bottom:18px; }
 }
+
+/* Tipografia desktop: meno condensata, più pulita e leggibile. */
+@media (min-width: 851px) {
+  .hero h1,
+  .section-heading h2,
+  .manifesto h2,
+  .dine-copy h2,
+  .contact-section h2,
+  .menu-row h3,
+  .craft-heading h2,
+  .pizza-gallery-heading h3,
+  .burger-gallery-heading h3,
+  .dessert-gallery-heading h3,
+  .brand-film-heading h2,
+  .full-menu-cta h3,
+  .footer-brand,
+  .beer-heading h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: normal;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+  }
+
+  .hero h1 { letter-spacing: -0.045em; }
+  .hero h1 em,
+  .section-heading h2 em,
+  .manifesto h2 em,
+  .dine-copy h2 em,
+  .contact-section h2 em,
+  .brand-film-heading h2 em,
+  .beer-heading h3 em {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+  }
+
+  .beer-heading h3 { font-size: clamp(38px, 4.2vw, 54px); line-height: 1; }
+  .beer-heading > p:last-child { font-size: 15px; line-height: 1.55; }
+  .beer-card small { font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 700; letter-spacing: .09em; line-height: 1.35; }
+  .beer-card h4 { font-family: Arial, Helvetica, sans-serif; font-size: clamp(17px, 1.45vw, 21px); font-weight: 800; letter-spacing: -.025em; line-height: 1.15; }
+  .beer-card p { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 400; line-height: 1.55; }
+  .beer-card span { font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 700; letter-spacing: .07em; }
+  .menu-row-desc, .manifesto-copy > p:last-child, .dine-copy > p:not(.eyebrow), .contact-lead { font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.65; }
+  .eyebrow { font-family: Arial, Helvetica, sans-serif; font-weight: 700; letter-spacing: .12em; }
+  .desktop-nav { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0; }
+}
+
+
+/* Nel manifesto il monogramma LR lascia spazio al logo completo. */
+@media (min-width: 851px) {
+  .manifesto-mark { display:flex; align-items:center; justify-content:center; opacity:1; letter-spacing:0; }
+  .manifesto-mark img { display:block; width:100%; max-width:260px; height:auto; object-fit:contain; }
+}
+
+/* Logo ufficiale completo nella sezione manifesto. */
+.manifesto-mark { display:flex; align-items:center; justify-content:center; opacity:1; }
+.manifesto-mark img { display:block; width:100%; max-width:260px; max-height:360px; height:auto; object-fit:contain; }
+@media (max-width:850px) { .manifesto-mark { display:none; } }
